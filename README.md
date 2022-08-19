@@ -4,10 +4,8 @@ Mi Proyecto
 
 Programacion visual Basic
 sub Sena ()
-
-nom = "luis¨"
+nom = "luis"
 msgbox num
 nom = "Maria"
 msgbox "el nombre es" & nom
-
 end sub
