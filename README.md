@@ -34,3 +34,28 @@ Sub proyecto()
     End If
 End If
 ```
+
+```
+Sub registro()
+    fila = datos.Cells(1, 6)
+    datos.Cells(fila, 1) = registro.Cells(6, 4)
+    datos.Cells(fila, 2) = registro.Cells(8, 4)
+    datos.Cells(fila, 3) = registro.Cells(10, 4)
+    datos.Cells(fila, 4) = registro.Cells(12, 4)
+    MsgBox "Datos Guardados"
+    datos.Cells(1, 6) = fila + 1
+End Sub
+```
+
+```
+Sub inicio()
+     For x = 1 To 15
+   c = InputBox(" ingrese un nombre: ")
+        fila = dato.Cells(1, 6)
+         dato.Cells(fila, 2) = c
+         dato.Cells(1, 6) = fila + 1
+          Next x
+           MsgBox ("Muchas gracias")
+end sub 
+```
+         
