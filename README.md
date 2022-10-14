@@ -255,3 +255,49 @@ void main() {
     - [ejersicio](ejersicio3.md)
     ```
          
+void main() {
+   
+  Empresa empresa = new Empresa(pais: 'Colombia', numero: 90142, oficina: 'la trinidad');
+  empresa.canCaracteres()
+  
+    
+ 
+   
+  
+  
+}
+  
+ class Empresa{
+   String? pais, oficina;
+   int? numero;
+     
+ Empresa({this.pais, this.numero, this.oficina});
+    
+   
+ String? generarCodigo (){
+     String? paisx = pais!.substring(0, 3);
+      int? cantOficina = oficina?.length;
+     int? posOficina = cantOficina! - 3;
+     String? ofi = oficina!.substring(posOficina,cantOficina);
+     String? numerotostr = numero.toString();
+     String? num = numerotostr.substring(0, 3);
+     String? codigo = '$paisx$num$ofi';
+     return codigo;
+       
+   
+ }      
+ void canCaracteres(){   
+    int cantPais = pais!.length; 
+    int cantofi = oficina!.length;
+   String? convNum = numero.toString();
+   int cantNum.lenght;
+   print("""
+   la cantidad de caracteres son: $cantOfi
+   los caracteres de el pais son: $cantPaisx
+   la cantidad de caracteres de los numeros: $cantNum
+   
+   """)
+   }
+ }
+   
+ 
