@@ -255,15 +255,34 @@ void main() {
     - [ejersicio](ejersicio3.md)
     ```
          
+
 void main() {
-   
-  Empresa empresa = new Empresa(pais: 'Colombia', numero: 90142, oficina: 'la trinidad');
-  empresa.canCaracteres()
+  Empresa empresa = Empresa(pais: 'Colombia', numero: 90142, oficina: 'la trinidad');
+  Empresa empresaB = Empresa(pais: 'Mexico', numero: 44117, oficina: 'Monterrey');
   
-    
+  print("""
+   Pais: ${empresa.pais}.
+    numero: ${empresa.numero}.
+   oficina: ${empresa.oficina}.
  
-   
-  
+ Codigo: ${empresa.generarCodigo()}.
+
+""");
+  empresa.cantCaracteres();
+
+  print(""" 
+   Pais: ${empresaB.pais}.
+    numero: ${empresaB.numero}.
+   oficina: ${empresaB.oficina}.
+
+
+
+Codigo: ${empresaB.generarCodigo()}.
+""");
+
+
+empresaB.cantCaracteres();
+    
   
 }
   
@@ -276,9 +295,9 @@ void main() {
    
  String? generarCodigo (){
      String? paisx = pais!.substring(0, 3);
-      int? cantOficina = oficina?.length;
-     int? posOficina = cantOficina! - 3;
-     String? ofi = oficina!.substring(posOficina,cantOficina);
+      int? cantOfi = oficina?.length;
+     int? posOfi = cantOfi! - 3;
+     String? ofi = oficina!.substring(posOfi,cantOfi);
      String? numerotostr = numero.toString();
      String? num = numerotostr.substring(0, 3);
      String? codigo = '$paisx$num$ofi';
@@ -288,16 +307,15 @@ void main() {
  }      
  void canCaracteres(){   
     int cantPais = pais!.length; 
-    int cantofi = oficina!.length;
+    int cantOfi = oficina!.length;
    String? convNum = numero.toString();
-   int cantNum.lenght;
+   int cantNum = convNum.length;
    print("""
    la cantidad de caracteres son: $cantOfi
-   los caracteres de el pais son: $cantPaisx
+   los caracteres de el pais son: $cantPais
    la cantidad de caracteres de los numeros: $cantNum
    
-   """)
+   """);
    }
  }
-   
  
