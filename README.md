@@ -319,3 +319,36 @@ empresaB.cantCaracteres();
    }
  }
  
+ 
+ ```
+ public class MyClass {
+      Person person = new person();  
+       person.nombre "Jose";
+        system.out.println (person.nombre);
+         system.out.println(person.getapellido());
+          person.setgenero("heterosexual");
+           system.out.print(person.imc(172, 55));
+     
+      system.out.println();
+}
+class Person{
+  public string nombre;
+   private string apellido;
+    protected string genero;
+    
+    person(string x)
+     this.apellido = x;
+        
+    }
+    stringGetapellido(){
+     return this apellido;
+}
+
+   void setgenero(string z){
+    this.genero = z;
+   }        
+    
+    double imc (int peso, int altura);{
+     this.genero = z;    
+    }
+    ```
