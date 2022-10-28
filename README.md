@@ -352,3 +352,38 @@ class Person{
      this.genero = z;    
     }
     ```
+    void main() {
+  Car car = Car();
+  Accesorios tapete = Accesorios('tapete');
+  Accesorios retrovisor = Accesorios('retrovisor');
+  Accesorios neumatico = Accesorios('neumatico');
+   car._accesorios.add(tapete);
+  car._accesorios.add(retrovisor);
+  car._accesorios.add(neumatico);
+    print(tapete.nombre);
+  print(tapete.nombre);
+  print(retrovisor.nombre);
+    print(neumatico.nombre);
+  
+   
+     
+  
+   
+ 
+}
+class Car{
+  List<Accesorios> _accesorios = [];
+  String? placa;
+    void setAccesorios(Accesorios accesorios){
+      _accesorios.add(accesorios);
+     
+    }
+  
+  
+}
+class Accesorios{
+  String? nombre;
+   
+ Accesorios(this.nombre);
+    
+}
