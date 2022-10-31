@@ -255,7 +255,7 @@ void main() {
     - [ejersicio](ejersicio3.md)
     ```
          
-
+ ```
 void main() {
   Empresa empresa = Empresa(pais: 'Colombia', numero: 90142, oficina: 'la trinidad');
   Empresa empresaB = Empresa(pais: 'Mexico', numero: 44117, oficina: 'Monterrey');
@@ -302,8 +302,8 @@ empresaB.cantCaracteres();
      String? num = numerotostr.substring(0, 3);
      String? codigo = '$paisx$num$ofi';
      return codigo;
-       
-   
+     ```   
+    
  }      
  void canCaracteres(){   
     int cantPais = pais!.length; 
@@ -318,9 +318,8 @@ empresaB.cantCaracteres();
    """);
    }
  }
- 
- 
- ```
+  ```
+  ```
  public class MyClass {
       Person person = new person();  
        person.nombre "Jose";
@@ -351,6 +350,7 @@ class Person{
     double imc (int peso, int altura);{
      this.genero = z;    
     }
+     ```
     ```
     void main() {
   Car car = Car();
@@ -387,3 +387,24 @@ class Accesorios{
  Accesorios(this.nombre);
     
 }
+ ```
+   ```
+  import 'dart:convert' as convert;
+
+import 'package:http/http.dart' as https;
+ 
+void main() async {
+     final url = Uri.https('regres.in','api/users/3');
+     final response = await https.get(url);
+   if (response.statusCode == 200){
+     final json = convert.jsonDecode(response.body);
+     print(json['data']['email']);
+      print(json['data']['first_name']);
+      print(json['support']['url']);
+    
+     }else{
+     print('problemas con la peticion');
+   }
+  
+}
+   ```
