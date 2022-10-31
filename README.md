@@ -248,11 +248,11 @@ void main() {
       return p;
     }
       
-    double multiplicar(){
-      double c = number1! * number2!;
+   double multiplicar(){
+     double c = number1! * number2!;
        return c;
     }
-    - [ejersicio](ejersicio3.md)
+    
     ```
          
  ```
@@ -302,10 +302,10 @@ empresaB.cantCaracteres();
      String? num = numerotostr.substring(0, 3);
      String? codigo = '$paisx$num$ofi';
      return codigo;
-     ```   
+     
     
  }      
- void canCaracteres(){   
+  void canCaracteres(){   
     int cantPais = pais!.length; 
     int cantOfi = oficina!.length;
    String? convNum = numero.toString();
@@ -318,7 +318,9 @@ empresaB.cantCaracteres();
    """);
    }
  }
-  ```
+
+```
+  
   ```
  public class MyClass {
       Person person = new person();  
@@ -328,18 +330,18 @@ empresaB.cantCaracteres();
           person.setgenero("heterosexual");
            system.out.print(person.imc(172, 55));
      
-      system.out.println();
+   system.out.println();
 }
 class Person{
   public string nombre;
    private string apellido;
     protected string genero;
     
-    person(string x)
+   person(string x)
      this.apellido = x;
         
     }
-    stringGetapellido(){
+   stringGetapellido(){
      return this apellido;
 }
 
@@ -347,12 +349,14 @@ class Person{
     this.genero = z;
    }        
     
-    double imc (int peso, int altura);{
+   double imc (int peso, int altura);{
      this.genero = z;    
     }
+  
      ```
+    
     ```
-    void main() {
+  void main() {
   Car car = Car();
   Accesorios tapete = Accesorios('tapete');
   Accesorios retrovisor = Accesorios('retrovisor');
