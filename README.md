@@ -255,7 +255,7 @@ void main() {
     
     ```
          
- ```
+    ```
 void main() {
   Empresa empresa = Empresa(pais: 'Colombia', numero: 90142, oficina: 'la trinidad');
   Empresa empresaB = Empresa(pais: 'Mexico', numero: 44117, oficina: 'Monterrey');
@@ -320,6 +320,7 @@ empresaB.cantCaracteres();
  }
 
 ```
+
 ```
 void main(){
    Conejo conejo = Conejo();
@@ -388,7 +389,7 @@ class Omnivoro extends Animal{
 class Hombre extends Omnivoro{
   String? apellido;
 }
-```
+  ```
   
   ```
  public class MyClass {
@@ -424,6 +425,7 @@ class Person{
   
    ```
     
+   ```
    void main() { 
    Car car = Car();
   Accesorios accesorio_1 = Accesorios("tapete");
