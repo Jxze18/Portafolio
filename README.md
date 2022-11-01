@@ -392,36 +392,40 @@ class Hombre extends Omnivoro{
   ```
   
   ```
- public class MyClass {
-      Person person = new person();  
-       person.nombre "Jose";
-        system.out.println (person.nombre);
-         system.out.println(person.getapellido());
-          person.setgenero("heterosexual");
-           system.out.print(person.imc(172, 55));
-     
-   system.out.println();
-}
-class Person{
-  public string nombre;
-   private string apellido;
-    protected string genero;
+ public class MyClass { 
     
-   person(string x)
-     this.apellido = x;
+   public static void main(String[] args) {
+  	 Person person = new Person("Argote");
+  	   Person.nombre = "Jose";
+     System.out.println(person.nombre);
+      System.out.println(person.getApellido());
+    person.setGenero("Heterosexual");
+       System.out.println(person.imc(72, 155));
+    
+  }
+}
+class Person {
+	 public String nombre;
+      private String apellido;
+       private String genero;
+    
+    Person(String x){
+    	this.apellido = x;
+ }
         
-    }
-   stringGetapellido(){
-     return this apellido;
+    String getApellido(){
+    	return this.apellido
 }
-
-   void setgenero(string z){
-    this.genero = z;
-   }        
-    
-   double imc (int peso, int altura);{
-     this.genero = z;    
-    }
+            
+    void setGenero(String z){
+        this.genero = z;
+            
+}
+        
+    double imc(int peso, int altura){
+    return peso * altura;
+        }
+}
   
    ```
     
