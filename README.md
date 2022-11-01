@@ -320,6 +320,75 @@ empresaB.cantCaracteres();
  }
 
 ```
+```
+void main(){
+   Conejo conejo = Conejo();
+    conejo.nombre = "cacio";
+     conejo.edad = 4;
+   conejo.comida = "zanahoria";
+   print("""
+   El nombre es: ${conejo.nombre}
+   La edad es: ${conejo.edad}
+   Una de las comida que come es: ${conejo.comida}
+  """);
+  
+  
+   Leon leon = Leon();
+    leon.nombre = "fabra";
+     leon.edad = 3;
+   print("""
+   El nombre es: ${leon.nombre}
+   La edad  es: ${leon.edad}
+  """);
+  
+  
+   Hiena hiena = Hiena();
+    hiena.nombre = "rin";
+     hiena.edad = 9;
+      hiena.peso = "42 Kg";
+   print("""
+   El nombre es: ${hiena.nombre}
+   La edad es: ${hiena.edad}
+   El peso : ${hiena.peso}
+  """);
+  
+  
+   Hombre hombre = Hombre();
+    hombre.nombre = "Jose";
+     hombre.apellido = "Argote";
+      hombre.edad = 17;
+   print("""
+   El nombre es: ${hombre.nombre}
+   El apellido es: ${hombre.apellido}
+   La edad es: ${hombre.edad}
+  """);
+  
+}
+class Animal{
+  String? nombre; 
+}
+class Herviboro extends Animal{
+  int? edad;
+}
+class Conejo extends Herviboro{
+  String? comida;
+}
+class Carnivoro extends Animal{
+  int? edad;
+}
+class Leon extends Carnivoro{
+  String? peso;
+}
+class Hiena extends Carnivoro{
+  String? peso;
+}
+class Omnivoro extends Animal{
+  int? edad;
+}
+class Hombre extends Omnivoro{
+  String? apellido;
+}
+```
   
   ```
  public class MyClass {
@@ -353,45 +422,49 @@ class Person{
      this.genero = z;    
     }
   
-     ```
+   ```
     
-    ```
-  void main() {
-  Car car = Car();
-  Accesorios tapete = Accesorios('tapete');
-  Accesorios retrovisor = Accesorios('retrovisor');
-  Accesorios neumatico = Accesorios('neumatico');
-   car._accesorios.add(tapete);
-  car._accesorios.add(retrovisor);
-  car._accesorios.add(neumatico);
-    print(tapete.nombre);
-  print(tapete.nombre);
-  print(retrovisor.nombre);
-    print(neumatico.nombre);
+   void main() { 
+   Car car = Car();
+  Accesorios accesorio_1 = Accesorios("tapete");
+  Accesorios accesorio_2 = Accesorios("retrovisor");
+  Accesorios accesorio_3 = Accesorios("neumatico");
+   car.placa = "IQI62D";
+   car.setAccesorio(accesorio_1);
+  car.setAccesorio(accesorio_2);
+  car.setAccesorio(accesorio_3);
+     print("La placa es: ${car.placa}");
+  print(car.getAccesorios());
+   
   
    
-     
-  
-   
- 
+
 }
-class Car{
-  List<Accesorios> _accesorios = [];
+ class Car{
+  List<Accesorios> _accesorios=[];
   String? placa;
-    void setAccesorios(Accesorios accesorios){
-      _accesorios.add(accesorios);
+    void setAccesorio (Accesorios accesorio){
+      _accesorios.add(accesorio);
      
     }
+  List<Accesorios> getAccesorios(){
+    return _accesorios;
   
   
 }
-class Accesorios{
+ }
+ class Accesorios{
   String? nombre;
-   
- Accesorios(this.nombre);
+   Accesorios(this.nombre);
+  
+   String toString(){
+    return nombre!;
+  }
     
-}
- ```
+} 
+   ```
+  
+
    ```
   import 'dart:convert' as convert;
 
@@ -412,7 +485,8 @@ void main() async {
   
 }
    ```
-  ```
+ 
+ ```
   import 'dart:convert' as convert;
 
 import 'package:http/http.dart' as https;
