@@ -512,3 +512,81 @@ void main() async {
   
 }
   ```
+  
+  
+  nav {
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    border: 1px solid black;
+    width: 1284px;
+    background-color: rgb(100, 95, 95);
+
+  }
+
+
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+    
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #100a0a;
+    
+   
+}
+
+nav ul li:hover {
+    background: #eca023;
+ 
+}
+
+.p{
+    position: absolute;
+    left: 20px;
+    width: 176px;
+    margin: 0px -10px;
+}
+
+
+    
+
+@media not screen and (min-width: 200px){
+    section{
+        background-color: royalblue;
+    }
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba1</title>
+</head>
+<body>
+  <nav>
+    <img src="jordan.png" alt="" class="p">
+     <ul>    
+      <li><a href="#">Opcion</a></li>
+				<li><a href="#">Centro</a></li>
+				<li><a href="#">Ayuda</a></li>
+    </ul>
+  </nav>
+  
+</body>
+</html>
+
